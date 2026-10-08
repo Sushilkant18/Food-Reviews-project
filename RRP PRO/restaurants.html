@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurants - FoodReview</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">FoodReview</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="restaurants.html" class="active">Restaurants</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <h1>Discover Restaurants</h1>
+
+        <p>
+            Find the perfect restaurant based on ratings,
+            reviews and cuisine.
+        </p>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="restaurant-search">
+
+        <input
+            type="text"
+            id="restaurantSearch"
+            placeholder="Search restaurant..."
+            onkeyup="filterRestaurants()"
+        >
+
+    </section>
+
+
+    <!-- Restaurant List -->
+    <section class="section">
+
+        <div class="restaurant-container" id="restaurantList">
+
+            <div class="restaurant-card">
+
+                <div class="restaurant-image">
+                    🍛
+                </div>
+
+                <div class="restaurant-info">
+
+                    <h3>The Grand Kitchen</h3>
+
+                    <p>Indian • Fine Dining</p>
+
+                    <p>📍 Bengaluru</p>
+
+                    <p class="rating">
+                        ⭐⭐⭐⭐⭐ <strong>4.9/5</strong>
+                    </p>
+
+                    <p>250 Customer Reviews</p>
+
+                    <button class="button">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="restaurant-card">
+
+                <div class="restaurant-image">
+                    🍕
+                </div>
+
+                <div class="restaurant-info">
+
+                    <h3>La Bella Italia</h3>
+
+                    <p>Italian • Fine Dining</p>
+
+                    <p>📍 Bengaluru</p>
+
+                    <p class="rating">
+                        ⭐⭐⭐⭐⭐ <strong>4.8/5</strong>
+                    </p>
+
+                    <p>185 Customer Reviews</p>
+
+                    <button class="button">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="restaurant-card">
+
+                <div class="restaurant-image">
+                    🍜
+                </div>
+
+                <div class="restaurant-info">
+
+                    <h3>Asian Garden</h3>
+
+                    <p>Asian • Restaurant</p>
+
+                    <p>📍 Bengaluru</p>
+
+                    <p class="rating">
+                        ⭐⭐⭐⭐☆ <strong>4.7/5</strong>
+                    </p>
+
+                    <p>210 Customer Reviews</p>
+
+                    <button class="button">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="restaurant-card">
+
+                <div class="restaurant-image">
+                    🥘
+                </div>
+
+                <div class="restaurant-info">
+
+                    <h3>Spice Palace</h3>
+
+                    <p>Indian • Family Restaurant</p>
+
+                    <p>📍 Bengaluru</p>
+
+                    <p class="rating">
+                        ⭐⭐⭐⭐☆ <strong>4.6/5</strong>
+                    </p>
+
+                    <p>165 Customer Reviews</p>
+
+                    <button class="button">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <h3>FoodReview</h3>
+
+        <p>Discover. Review. Enjoy.</p>
+
+        <p>© 2026 FoodReview. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

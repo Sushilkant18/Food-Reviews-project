@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: #111;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-size: 16px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #d4af37;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Search */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 400px;
+    padding: 15px;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 15px 25px;
+
+    border: none;
+
+    background-color: #d4af37;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 70px 8%;
+}
+
+.section h2,
+.features h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+
+/* Restaurant Cards */
+
+.restaurant-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+}
+
+.restaurant-card {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-8px);
+}
+
+.restaurant-image {
+    height: 180px;
+
+    background-color: #ddd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 70px;
+}
+
+.restaurant-info {
+    padding: 25px;
+}
+
+.restaurant-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.restaurant-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.rating {
+    color: #d4af37 !important;
+    font-size: 17px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    background-color: #111;
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #d4af37;
+}
+
+
+/* Features */
+
+.features {
+    background-color: #111;
+    color: white;
+
+    padding: 70px 8%;
+}
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.feature {
+    background-color: #1e1e1e;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+
+/* Page Header */
+
+.page-header {
+    background-color: #111;
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    color: #ccc;
+}
+
+
+/* Restaurant Search */
+
+.restaurant-search {
+    text-align: center;
+    padding: 40px;
+}
+
+.restaurant-search input {
+    width: 400px;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+/* Reviews */
+
+.reviews-section {
+    padding: 60px 8%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+.review-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+}
+
+.review-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.review-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* Review Form */
+
+.review-form-section {
+    max-width: 700px;
+
+    margin: 40px auto 80px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+}
+
+.review-form-section h2 {
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+
+/* About */
+
+.about-section {
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    background-color: white;
+
+    padding: 50px;
+
+    line-height: 1.8;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+}
+
+.about-section h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    color: #111;
+}
+
+.about-section ul {
+    margin-left: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+footer h3 {
+    color: #d4af37;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+    color: #ccc;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input {
+        width: 90%;
+    }
+
+    .restaurant-search input {
+        width: 90%;
+    }
+
+}

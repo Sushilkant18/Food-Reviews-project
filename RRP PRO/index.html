@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodReview - Discover Great Restaurants</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">FoodReview</div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Discover Your Next<br>Favorite Restaurant</h1>
+
+            <p>
+                Explore restaurants, read real customer reviews,
+                and share your own dining experiences.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search restaurants..."
+                >
+
+                <button onclick="searchRestaurant()">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Restaurants -->
+    <section class="section">
+
+        <h2>Popular Restaurants</h2>
+
+        <p class="section-text">
+            Discover some of the most loved restaurants by our customers.
+        </p>
+
+
+        <div class="restaurant-container">
+
+            <div class="restaurant-card">
+
+                <div class="restaurant-image">
+                    🍽️
+                </div>
+
+                <div class="restaurant-info">
+
+                    <h3>The Grand Kitchen</h3>
+
+                    <p>Indian • Fine Dining</p>
+
+                    <p class="rating">
+                        ⭐⭐⭐⭐⭐ <strong>4.9</strong>
+                    </p>
+
+                    <p>📍 Bengaluru</p>
+
+                    <a href="restaurants.html" class="button">
+                        View Restaurant
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="restaurant-card">
+
+                <div class="restaurant-image">
+                    🍕
+                </div>
+
+                <div class="restaurant-info">
+
+                    <h3>La Bella Italia</h3>
+
+                    <p>Italian • Fine Dining</p>
+
+                    <p class="rating">
+                        ⭐⭐⭐⭐⭐ <strong>4.8</strong>
+                    </p>
+
+                    <p>📍 Bengaluru</p>
+
+                    <a href="restaurants.html" class="button">
+                        View Restaurant
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="restaurant-card">
+
+                <div class="restaurant-image">
+                    🍜
+                </div>
+
+                <div class="restaurant-info">
+
+                    <h3>Asian Garden</h3>
+
+                    <p>Asian • Restaurant</p>
+
+                    <p class="rating">
+                        ⭐⭐⭐⭐☆ <strong>4.7</strong>
+                    </p>
+
+                    <p>📍 Bengaluru</p>
+
+                    <a href="restaurants.html" class="button">
+                        View Restaurant
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Choose Us -->
+    <section class="features">
+
+        <h2>Why Choose FoodReview?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature">
+                <h3>⭐ Trusted Reviews</h3>
+                <p>
+                    Read genuine experiences shared by customers.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🍽️ Discover Restaurants</h3>
+                <p>
+                    Find restaurants based on ratings and reviews.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>✍️ Share Experience</h3>
+                <p>
+                    Share your dining experience with others.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>FoodReview</h3>
+
+        <p>
+            Discover. Review. Enjoy.
+        </p>
+
+        <p>
+            © 2026 FoodReview. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reviews - FoodReview</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">FoodReview</div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="restaurants.html">Restaurants</a>
+
+            <a href="reviews.html" class="active">
+                Reviews
+            </a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <h1>Customer Reviews</h1>
+
+        <p>
+            Real experiences from people who love good food.
+        </p>
+
+    </section>
+
+
+    <!-- Reviews -->
+    <!-- Reviews -->
+
+<section
+    class="reviews-section"
+    id="reviewsSection"
+>
+
+    <p>Loading reviews...</p>
+
+</section>
+
+        <div class="review-card">
+
+            <div class="review-header">
+
+                <div>
+                    <h3>Rahul Kumar</h3>
+                    <p>The Grand Kitchen</p>
+                </div>
+
+                <p class="rating">
+                    ⭐⭐⭐⭐⭐
+                </p>
+
+            </div>
+
+            <p>
+                "The food was absolutely amazing. The staff were
+                friendly and the ambience was excellent."
+            </p>
+
+            <small>2 days ago</small>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-header">
+
+                <div>
+                    <h3>Ananya Sharma</h3>
+                    <p>La Bella Italia</p>
+                </div>
+
+                <p class="rating">
+                    ⭐⭐⭐⭐⭐
+                </p>
+
+            </div>
+
+            <p>
+                "One of the best Italian restaurants I have visited.
+                The pasta was delicious."
+            </p>
+
+            <small>5 days ago</small>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-header">
+
+                <div>
+                    <h3>Arjun R</h3>
+                    <p>Asian Garden</p>
+                </div>
+
+                <p class="rating">
+                    ⭐⭐⭐⭐☆
+                </p>
+
+            </div>
+
+            <p>
+                "Great food and a beautiful atmosphere.
+                The service was also very good."
+            </p>
+
+            <small>1 week ago</small>
+
+        </div>
+
+    </section>
+
+
+    <!-- Write Review -->
+    <section class="review-form-section">
+
+        <h2>Share Your Experience</h2>
+
+        <form id="reviewForm">
+
+            <label>Your Name</label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Restaurant</label>
+
+            <select id="reviewRestaurant">
+
+                <option>The Grand Kitchen</option>
+                <option>La Bella Italia</option>
+                <option>Asian Garden</option>
+                <option>Spice Palace</option>
+
+            </select>
+
+
+            <label>Your Rating</label>
+
+            <select id="customerRating">
+
+                <option value="5">⭐⭐⭐⭐⭐ 5 Stars</option>
+                <option value="4">⭐⭐⭐⭐ 4 Stars</option>
+                <option value="3">⭐⭐⭐ 3 Stars</option>
+                <option value="2">⭐⭐ 2 Stars</option>
+                <option value="1">⭐ 1 Star</option>
+
+            </select>
+
+
+            <label>Your Review</label>
+
+            <textarea
+                id="customerReview"
+                rows="5"
+                placeholder="Write about your experience..."
+                required
+            ></textarea>
+
+
+            <button type="submit" class="button">
+                Submit Review
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <h3>FoodReview</h3>
+
+        <p>Discover. Review. Enjoy.</p>
+
+        <p>© 2026 FoodReview. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
